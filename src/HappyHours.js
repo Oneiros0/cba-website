@@ -4,22 +4,10 @@ import londoncalling from './images/Happy Hours/londoncalling.jpg';
 import madpriest from './images/Happy Hours/madpriest.jpg';
 import mainstreetmeats from './images/Happy Hours/mainstreetmeats.jpg';
 import nakedriver from './images/Happy Hours/nakedriver.jpg';
-import {Redirect} from 'react-router-dom'
+import {Redirect, Link} from 'react-router-dom'
+
 
 class HappyHours extends React.Component{
-  state = {
-    redirect: false
-  }
-  setRedirect = () => {
-    this.setState({
-      redirect: true
-    })
-  }
-  renderRedirect = () => {
-    if (this.state.redirect) {
-      return <Redirect to='/target' />
-    }
-  }
   render(){
     return(
     <div className="container">
@@ -54,7 +42,9 @@ class HappyHours extends React.Component{
               25% off tab Sundays
               <br/>
               <br/>
-              <Button variant="dark">Website</Button>
+              <Button variant="dark">
+                <a href="https://www.londoncallingbar.com/" target="_blank" rel="noopener noreferrer">Website</a>
+              </Button>
             </Container>
           </Jumbotron>
         </Col>
@@ -73,7 +63,9 @@ class HappyHours extends React.Component{
               Weekly Tipple of a spirit and beer at a discounted rate for CBA members!  Ask the bartender for more information.
               <br/>
               <br/>
-              <Button variant="dark">Website</Button>
+              <Button variant="dark">
+                <a href="http://www.mainstreetmeatschatt.com" target="_blank" rel="noopener noreferrer">Website</a>
+              </Button>
             </Container>
           </Jumbotron>
         </Col>
@@ -94,7 +86,9 @@ class HappyHours extends React.Component{
               Pint Night every weekday from 5-7!
               <br/>
               <br/>
-              <Button variant="dark">Website</Button>
+              <Button variant="dark">
+                <a href="https://www.nakedriverbrewing.com/" target="_blank" rel="noopener noreferrer">Website</a>
+              </Button>
             </Container>
           </Jumbotron>
         </Col>
@@ -115,7 +109,9 @@ class HappyHours extends React.Component{
               Exclusive Menu of Classic Cocktails!  Ask the bartender for more information.
               <br/>
               <br/>
-              <Button onClick={this.setRedirect} variant="dark" href="www.google.com">Website</Button>
+                <Button variant="dark">
+                  <a href="https://www.madpriestcha.com/" target="_blank" rel="noopener noreferrer">Website</a>
+                </Button>
             </Container>
           </Jumbotron>
         </Col>
