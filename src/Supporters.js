@@ -47,6 +47,8 @@ import YogaLanding from './images/Supporters/YogaLanding.jpg'
 function Supporters() {
   return (
     <div className="container">
+    <br/>
+    <br/>
         <h1>Our Supporters</h1>
         <Row>
           <Col>

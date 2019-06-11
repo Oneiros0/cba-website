@@ -58,7 +58,7 @@ function Home() {
                 <ListGroup.Item>Exclusive News and Education</ListGroup.Item>
                 <ListGroup.Item>Network with Industry Professionals</ListGroup.Item>
                 <ListGroup.Item>Access to Happy Hour Events</ListGroup.Item>
-                <Button>Join Today</Button>
+                <Button href="/join">Join Today</Button>
               </ListGroup>
             </Container>
           </Jumbotron>

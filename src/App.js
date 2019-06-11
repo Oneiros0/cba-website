@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import Supporters from './Supporters.js';
-import AboutUs from './About';
 import Board from './Board';
 import Join from './Join';
 import HappyHours from './HappyHours';
@@ -17,7 +16,6 @@ function App() {
       <Navbar/>
       <Route exact path='/' component={Home}/>
         <Switch>
-            <Route path='/aboutus' component={AboutUs} />
             <Route path='/board' component={Board} />
             <Route path='/join' component={Join} />
             <Route path='/happyhours' component={HappyHours} />
