@@ -43,6 +43,7 @@ import TattersallSpirits from './images/Supporters/TattersallSpirits.jpg'
 import WiseacreBrewingCo from './images/Supporters/WiseacreBrewingCo.png'
 import YeeHawBrewing from './images/Supporters/YeeHawBrewing.jpg'
 import YogaLanding from './images/Supporters/YogaLanding.jpg'
+import DishTPass from './images/Supporters/disthpas.png'
 
 function Supporters() {
   return (
@@ -52,13 +53,13 @@ function Supporters() {
         <h1>Our Supporters</h1>
         <Row>
           <Col>
+            <Image src={DishTPass} className="supporter-img"></Image>
+          </Col>
+          <Col>
             <Image src={PosiTiffitea} className="supporter-img"></Image>
           </Col>
           <Col>
             <Image src={bigfrogb} className="supporter-img"></Image>
-          </Col>
-          <Col>
-            <Image src={bitteralibi} className="supporter-img"></Image>
           </Col>
         </Row>
         <Row>
@@ -206,11 +207,10 @@ function Supporters() {
         </Row>
         <Row>
           <Col>
-          </Col>
-          <Col>
           <Image src={YogaLanding} className="supporter-img"></Image>
           </Col>
           <Col>
+            <Image src={bitteralibi} className="supporter-img"></Image>
           </Col>
         </Row>
     </div>

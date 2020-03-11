@@ -4,13 +4,14 @@ import londoncalling from './images/Happy Hours/londoncalling.jpg';
 import madpriest from './images/Happy Hours/madpriest.jpg';
 import mainstreetmeats from './images/Happy Hours/mainstreetmeats.jpg';
 import nakedriver from './images/Happy Hours/nakedriver.jpg';
+import yogalanding from './images/Happy Hours/Yoga Landing.jpg'
 import {Redirect, Link} from 'react-router-dom'
 
 
 class HappyHours extends React.Component{
   render(){
     return(
-    <div className="container">
+      <div className="container">
       <br/>
       <br/>
       <h1>Happy Hours</h1>
@@ -20,6 +21,29 @@ class HappyHours extends React.Component{
         <br/>
         Present your CBA Membership Card to any of the below establishments to take advantage of these exclusive deals.
       </div>
+      <Row id="top-margin" className="hh-row">
+        <Col>
+          <Image className="board-member-img" src={yogalanding}/>
+        </Col>
+        <Col>
+          <Jumbotron>
+            <Container>
+              <h2>Yoga Landing</h2>
+              <br/>
+              <br/>
+              2414 Sidney Street, 37408
+              <br/>
+              <br/>
+              Your health and wellness are important to us!  Yoga Landing offers 20% off classes and packages to CBA Members.  Just present your CBA Member Card to redeem the discount.
+              <br/>
+              <br/>
+              <Button variant="dark">
+                <a href="https://www.yogalanding.net/" target="_blank" rel="noopener noreferrer">Website</a>
+              </Button>
+            </Container>
+          </Jumbotron>
+        </Col>
+      </Row>
       <Row id="top-margin" className="hh-row">
         <Col>
           <Image className="board-member-img" src={londoncalling}/>
